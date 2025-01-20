@@ -284,6 +284,8 @@ nav {
   background-color: var(--white);
   display: grid;
   place-content: center;
+  height: 100%; /* Assure que le conteneur prend toute la hauteur */
+  width: 100%; /* Assure que le conteneur prend toute la largeur */
 }
 
 .collection__image h4 {
@@ -305,6 +307,14 @@ nav {
   font-weight: 600;
   color: var(--text-light);
 }
+
+/* Ajout de la classe pour le lien */
+.collection__link {
+  display: block; /* Permet au lien d'occuper tout le conteneur */
+  text-decoration: none; /* Supprime le soulignement */
+  color: inherit; /* Garde la couleur initiale */
+}
+
 
 .collection__card {
   padding: 2rem;
