@@ -294,6 +294,10 @@ nav {
   font-family: var(--font-heading);
   color: var(--primary-color-dark);
 }
+.collection__container img {
+  display: flex;
+  margin-top: 20px; /* Ajout de l'espace au-dessus de l'image */
+}
 
 .collection__image p {
   padding: 0 2rem;
