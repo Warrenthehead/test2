@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="crowncaps.css">
+    <title>Crowncaps - Produit</title>
+</head>
+<body>
+    <!-- Bouton scroll -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">▲</button>
+
+    <header>
+        <nav>
+            <ul class="nav__links">
+                <li class="link logo">CROWNCAPS</li>
+                <li class="link">HOMMES</li>
+                <li class="link">FEMMES</li>
+                <li class="link">ENFANTS</li>
+                <li class="link">SPORTS</li>
+                <li class="link">MARQUES</li>
+                <li class="link">PERSONNALISER</li>
+            </ul>
+            <div class="social__icons">
+                <span><i class="ri-facebook-fill"></i></span>
+                <span><i class="ri-twitter-fill"></i></span>
+                <span><i class="ri-google-fill"></i></span>
+                <span><i class="ri-instagram-line"></i></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product__container">
+        <div class="product__details">
+            <p class="price" style="font-size: 17px; font-weight: 700;">LV Trainer <br>1 200 $</p>
+            <p class="description">Le LV Trainer est une sneaker moderne qui combine luxe et sportswear. Fabriqué avec des matériaux premium, il offre à la fois confort et style.</p>
+        </div>
+        <div class="product__images">
+            <div class="main-image">
+                <img id="displayedImage" src="assets/collection-1.png" alt="Image principale">
+            </div>
+            <div class="thumbnail__images">
+                <img src="assets/collection-1.png" alt="Miniature 1" onclick="changeImage('assets/collection-1.png')">
+                <img src="assets/collection-3.png" alt="Miniature 2" onclick="changeImage('assets/collection-3.png')">
+                <img src="assets/collection-2.png" alt="Miniature 3" onclick="changeImage('assets/collection-2.png')">
+            </div>
+        </div>
+        <div class="product__details">
+            <div class="size__selector">
+                <label for="size">Taille :</label>
+                <select id="size">
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                </select>
+            </div>
+            <button class="add__to__cart" onclick="addToCart()" style="color: rgb(255, 255, 255); background-color: #2c2f35;">Ajouter au panier</button>
+
+
+            <!-- Section de caractéristiques techniques -->
+            <div class="product__features" style="font-size: 15px;">
+                <h2>Caractéristiques du produit</h2>
+                <table>
+                    <tr>
+                        <th>Matériau</th>
+                        <td>Cuir Premium</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur</th>
+                        <td>Blanc & Or</td>
+                    </tr>
+                    <tr>
+                        <th>Poids</th>
+                        <td>400g</td>
+                    </tr>
+                    <tr>
+                        <th>Garantie</th>
+                        <td>2 ans</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Section d'avis clients -->
+            <div class="customer__reviews">
+                <h2>Avis clients</h2>
+                <div class="review">
+                    <div class="review__rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review__author">John D.</span>
+                    </div>
+                    <p class="review__text">Produit incroyable ! Très confortable et stylé.</p>
+                </div>
+                <div class="review">
+                    <div class="review__rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review__author">Jane S.</span>
+                    </div>
+                    <p class="review__text">Excellente qualité, mais un peu cher.</p>
+                </div>
+            </div>
+
+            <!-- Section FAQ -->
+            <div class="product__faq">
+                <h2>Questions fréquemment posées</h2>
+                <div class="faq__item">
+                    <h3>Quelle est la politique de retour ?</h3>
+                    <p>Vous pouvez retourner le produit dans les 30 jours suivant l'achat pour un remboursement complet.</p>
+                </div>
+                <div class="faq__item">
+                    <h3>La livraison internationale est-elle disponible ?</h3>
+                    <p>Oui, nous livrons dans le monde entier.</p>
+                </div>
+            </div>
+
+            <!-- Section de garantie et retour -->
+            <div class="warranty__info">
+                <h2>Garantie & Retours</h2>
+                <p>Ce produit est garanti 2 ans. Si vous rencontrez des problèmes, contactez notre service client.</p>
+            </div>
+
+            <!-- Badges de confiance -->
+            <div class="trust__badges">
+                <img src="/assets/airtel1.png" alt="Paiement sécurisé">
+                <img src="/assets/moovmoney.png" alt="Livraison gratuite">
+                <img src="assets/Gabon.png" alt="Garantie 2 ans">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h4>BOUTIQUES</h4>
+                <p>Hommes</p>
+                <p>Femmes</p>
+                <p>Top Marques</p>
+                <p>Sacs & Accessoires</p>
+                <p>Lookbook</p>
+            </div>
+            <div class="footer__col">
+                <h4>INFORMATIONS</h4>
+                <p>À propos de nous</p>
+                <p>Service client</p>
+                <p>Fabricants</p>
+                <p>Politique de confidentialité</p>
+                <p>Blog</p>
+            </div>
+            <div class="footer__col">
+                <h4>RÉSEAU</h4>
+                <div class="footer__socials">
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                    <span><i class="ri-instagram-line"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="section__container footer__bar">
+            <div class="copyright">
+                Copyright © 2023 Web Design Mastery. Tous droits réservés.
+            </div>
+            <div class="payment__cards">
+                <span><i class="ri-visa-fill"></i></span>
+                <span><i class="ri-bank-card-2-fill"></i></span>
+                <span><i class="ri-mastercard-line"></i></span>
+                <span><i class="ri-bank-card-2-line"></i></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            let image = document.getElementById("displayedImage");
+            
+            // Ajoute une animation de fondu
+            image.style.opacity = 0;
+            
+            setTimeout(() => {
+                image.src = src;
+                image.style.opacity = 1;
+            }, 300); // Délai pour laisser le fondu se faire
+        }
+        
+
+        function addToCart() {
+            const size = document.getElementById('size').value;
+            alert(`Ajouté au panier : LV Trainer - Taille ${size}`);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Scroll button visibility
+        window.onscroll = function() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        };
+    </script>
+</body>
+</html>
